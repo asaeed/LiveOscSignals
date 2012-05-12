@@ -8,6 +8,7 @@ RM := rm
 
 # All of the sources participating in the build are defined here
 -include sources.mk
+-include src/osc/subdir.mk
 -include src/subdir.mk
 -include subdir.mk
 -include objects.mk
@@ -44,7 +45,7 @@ all: LiveOscSignals
 LiveOscSignals: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MacOS X C++ Linker'
-	g++ -L"/Users/asaeed/work/LiveOscSignals/lib" -L"/Users/asaeed/code/cinder/lib" -L"/Users/asaeed/code/cinder/lib/macosx" -L/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries -arch i386 -framework Cocoa -framework OpenGL -framework Carbon -framework CoreVideo -framework QTKit -framework QuickTime -framework Accelerate -framework AudioToolbox -framework AudioUnit -framework CoreAudio -o "LiveOscSignals" $(OBJS) $(USER_OBJS) $(LIBS)
+	g++ -arch i386 -framework Cocoa -framework OpenGL -framework Carbon -framework CoreVideo -framework QTKit -framework QuickTime -framework Accelerate -framework AudioToolbox -framework AudioUnit -framework CoreAudio -Xlinker /Users/asaeed/code/cinder/lib/libcinder_d.a /Users/asaeed/work/LiveOscSignals/lib/osc.a -o "LiveOscSignals" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 	$(MAKE) --no-print-directory post-build

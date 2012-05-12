@@ -1087,7 +1087,10 @@ src/LiveOscSignalsApp.d src/LiveOscSignalsApp.o:  \
   /Users/asaeed/code/cinder/boost/boost/random/weibull_distribution.hpp \
   /Users/asaeed/work/LiveOscSignals/include/Resources.h \
   /Users/asaeed/code/cinder/include/cinder/CinderResources.h \
-  /System/Library/Frameworks/OpenGL.framework/Headers/gl.h
+  /System/Library/Frameworks/OpenGL.framework/Headers/gl.h \
+  /Users/asaeed/work/LiveOscSignals/include/OscListener.h \
+  /Users/asaeed/work/LiveOscSignals/include/OscMessage.h \
+  /Users/asaeed/work/LiveOscSignals/include/OscArg.h
 
 /Users/asaeed/code/cinder/include/cinder/app/AppBasic.h:
 
@@ -3264,3 +3267,9 @@ src/LiveOscSignalsApp.d src/LiveOscSignalsApp.o:  \
 /Users/asaeed/code/cinder/include/cinder/CinderResources.h:
 
 /System/Library/Frameworks/OpenGL.framework/Headers/gl.h:
+
+/Users/asaeed/work/LiveOscSignals/include/OscListener.h:
+
+/Users/asaeed/work/LiveOscSignals/include/OscMessage.h:
+
+/Users/asaeed/work/LiveOscSignals/include/OscArg.h:

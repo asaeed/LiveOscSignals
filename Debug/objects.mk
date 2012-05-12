@@ -4,5 +4,5 @@
 
 USER_OBJS :=
 
-LIBS := -lgl -lcinder_d
+LIBS :=
 
