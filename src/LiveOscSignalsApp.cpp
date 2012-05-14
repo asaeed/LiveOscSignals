@@ -15,11 +15,10 @@
 #include "cinder/Rand.h"
 #include "Resources.h"
 #include "gl.h"
-#include "OscListener.h"
 
-using namespace ci;
-using namespace ci::app;
-using namespace std;
+#include "OscListener.h"
+#include "LiveOsc.h"
+#include "boost/bind.hpp"
 
 class LiveOscSignalsApp : public ci::app::AppBasic {
 public:
@@ -29,10 +28,10 @@ public:
 	void update();
 	void draw();
 	void shutdown();
-	void printOSC();
-	void printOSCMessage( ci::osc::Message message );
 
-	ci::osc::Listener listener;
+	void onBeatEvent( ci::osc::Message* message );
+
+	LiveOsc liveOsc;
 	ci::gl::Texture texture;
 };
 
@@ -44,7 +43,12 @@ void LiveOscSignalsApp::setup() {
 	std::cout << "Setting application path: " << getAppPath() << std::endl;
 	chdir( getAppPath().c_str( ) );
 
-	listener.setup(9001);
+	liveOsc.setup();
+
+	// Use boost::bind, to bind our class's function, to our (this) specific instnace
+	// _1 is a typedef for boost::arg - So we're creating a spot for the first argument in the function
+	// note: adding "using namespace std" makes this not work because _1 becomes an ambiguous ref
+	liveOsc.getBeatSignal()->connect(boost::bind(&LiveOscSignalsApp::onBeatEvent, this, _1));
 
 	// Test loading a texture
 	texture = ci::gl::Texture( ci::loadImage( ci::app::App::get()->loadResource( RES_WHEEL ) ) );
@@ -54,7 +58,7 @@ void LiveOscSignalsApp::mouseDown( ci::app::MouseEvent event ) {
 }
 
 void LiveOscSignalsApp::update() {
-
+	liveOsc.update();
 }
 void LiveOscSignalsApp::draw() {
 	// clear out the window with black
@@ -76,50 +80,15 @@ void LiveOscSignalsApp::draw() {
 	}
 	*/
 
-	printOSC();
+	//printOSC();
+
 
 }
 
-void LiveOscSignalsApp::printOSC() {
-	while (listener.hasWaitingMessages()) {
-			ci::osc::Message message;
-			listener.getNextMessage(&message);
-			printOSCMessage(message);
-	}
+void LiveOscSignalsApp::onBeatEvent(ci::osc::Message* message){
+	liveOsc.printOSCMessage(*message);
 }
 
-void LiveOscSignalsApp::printOSCMessage( ci::osc::Message message ) {
-	console() << "--> " << message.getAddress() << "    ";
-	console() << "#args:" << message.getNumArgs() << "  ";
-	for (int i = 0; i < message.getNumArgs(); i++) {
-		console() << "[" << i << "] ";
-		console() << message.getArgTypeName(i) << "";
-		if (message.getArgType(i) == ci::osc::TYPE_INT32){
-			try {
-				console() << ":  "<< message.getArgAsInt32(i) << std::endl;
-			}
-			catch (...) {
-				console() << "Exception reading argument as int32" << std::endl;
-			}
-
-		}else if (message.getArgType(i) == ci::osc::TYPE_FLOAT){
-			try {
-				console() << ":  " << message.getArgAsFloat(i) << std::endl;
-			}
-			catch (...) {
-				console() << "Exception reading argument as float" << std::endl;
-			}
-		}else if (message.getArgType(i) == ci::osc::TYPE_STRING){
-			try {
-				console() << ":  " << message.getArgAsString(i).c_str() << std::endl;
-			}
-			catch (...) {
-				console() << "Exception reading argument as string" << std::endl;
-			}
-
-		}
-	}
-}
 
 void LiveOscSignalsApp::shutdown() {
 	std::cout << "Shutdown..." << std::endl;

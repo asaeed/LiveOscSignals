@@ -1090,7 +1090,211 @@ src/LiveOscSignalsApp.d src/LiveOscSignalsApp.o:  \
   /System/Library/Frameworks/OpenGL.framework/Headers/gl.h \
   /Users/asaeed/work/LiveOscSignals/include/OscListener.h \
   /Users/asaeed/work/LiveOscSignals/include/OscMessage.h \
-  /Users/asaeed/work/LiveOscSignals/include/OscArg.h
+  /Users/asaeed/work/LiveOscSignals/include/OscArg.h ../src/LiveOsc.h \
+  /Users/asaeed/code/cinder/boost/boost/signals2.hpp \
+  /Users/asaeed/code/cinder/boost/boost/signals2/deconstruct.hpp \
+  /Users/asaeed/code/cinder/boost/boost/signals2/deconstruct_ptr.hpp \
+  /Users/asaeed/code/cinder/boost/boost/signals2/postconstructible.hpp \
+  /Users/asaeed/code/cinder/boost/boost/signals2/predestructible.hpp \
+  /Users/asaeed/code/cinder/boost/boost/signals2/dummy_mutex.hpp \
+  /Users/asaeed/code/cinder/boost/boost/signals2/last_value.hpp \
+  /Users/asaeed/code/cinder/boost/boost/signals2/expired_slot.hpp \
+  /Users/asaeed/code/cinder/boost/boost/signals2/signal.hpp \
+  /Users/asaeed/code/cinder/boost/boost/function.hpp \
+  /Users/asaeed/code/cinder/boost/boost/function/detail/prologue.hpp \
+  /Users/asaeed/code/cinder/boost/boost/config/no_tr1/functional.hpp \
+  /Users/asaeed/code/cinder/boost/boost/function/function_base.hpp \
+  /Users/asaeed/code/cinder/boost/boost/type_traits/composite_traits.hpp \
+  /Users/asaeed/code/cinder/boost/boost/function_equal.hpp \
+  /Users/asaeed/code/cinder/boost/boost/function/function_fwd.hpp \
+  /Users/asaeed/code/cinder/boost/boost/mem_fn.hpp \
+  /Users/asaeed/code/cinder/boost/boost/bind/mem_fn.hpp \
+  /Users/asaeed/code/cinder/boost/boost/get_pointer.hpp \
+  /Users/asaeed/code/cinder/boost/boost/bind/mem_fn_template.hpp \
+  /Users/asaeed/code/cinder/boost/boost/bind/mem_fn_cc.hpp \
+  /Users/asaeed/code/cinder/boost/boost/preprocessor/enum.hpp \
+  /Users/asaeed/code/cinder/boost/boost/preprocessor/enum_params.hpp \
+  /Users/asaeed/code/cinder/boost/boost/function/detail/function_iterate.hpp \
+  /Users/asaeed/code/cinder/boost/boost/function/detail/maybe_include.hpp \
+  /Users/asaeed/code/cinder/boost/boost/function/function_template.hpp \
+  /Users/asaeed/code/cinder/boost/boost/detail/no_exceptions_support.hpp \
+  /Users/asaeed/code/cinder/boost/boost/signals2/connection.hpp \
+  /Users/asaeed/code/cinder/boost/boost/signals2/detail/null_output_iterator.hpp \
+  /Users/asaeed/code/cinder/boost/boost/function_output_iterator.hpp \
+  /Users/asaeed/code/cinder/boost/boost/signals2/detail/unique_lock.hpp \
+  /Users/asaeed/code/cinder/boost/boost/signals2/slot.hpp \
+  /Users/asaeed/code/cinder/boost/boost/bind.hpp \
+  /Users/asaeed/code/cinder/boost/boost/bind/bind.hpp \
+  /Users/asaeed/code/cinder/boost/boost/is_placeholder.hpp \
+  /Users/asaeed/code/cinder/boost/boost/bind/arg.hpp \
+  /Users/asaeed/code/cinder/boost/boost/visit_each.hpp \
+  /Users/asaeed/code/cinder/boost/boost/bind/storage.hpp \
+  /Users/asaeed/code/cinder/boost/boost/bind/bind_template.hpp \
+  /Users/asaeed/code/cinder/boost/boost/bind/bind_cc.hpp \
+  /Users/asaeed/code/cinder/boost/boost/bind/bind_mf_cc.hpp \
+  /Users/asaeed/code/cinder/boost/boost/bind/bind_mf2_cc.hpp \
+  /Users/asaeed/code/cinder/boost/boost/bind/placeholders.hpp \
+  /Users/asaeed/code/cinder/boost/boost/signals2/detail/signals_common.hpp \
+  /Users/asaeed/code/cinder/boost/boost/signals2/signal_base.hpp \
+  /Users/asaeed/code/cinder/boost/boost/signals2/detail/signals_common_macros.hpp \
+  /Users/asaeed/code/cinder/boost/boost/signals2/detail/tracked_objects_visitor.hpp \
+  /Users/asaeed/code/cinder/boost/boost/signals2/slot_base.hpp \
+  /Users/asaeed/code/cinder/boost/boost/any.hpp \
+  /Users/asaeed/code/cinder/boost/boost/weak_ptr.hpp \
+  /Users/asaeed/code/cinder/boost/boost/smart_ptr/weak_ptr.hpp \
+  /Users/asaeed/code/cinder/boost/boost/signals2/detail/foreign_ptr.hpp \
+  /Users/asaeed/code/cinder/boost/boost/scoped_ptr.hpp \
+  /Users/asaeed/code/cinder/boost/boost/smart_ptr/scoped_ptr.hpp \
+  /Users/asaeed/code/cinder/boost/boost/variant/apply_visitor.hpp \
+  /Users/asaeed/code/cinder/boost/boost/variant/detail/apply_visitor_unary.hpp \
+  /Users/asaeed/code/cinder/boost/boost/variant/detail/generic_result_type.hpp \
+  /Users/asaeed/code/cinder/boost/boost/variant/detail/apply_visitor_binary.hpp \
+  /Users/asaeed/code/cinder/boost/boost/variant/detail/apply_visitor_unary.hpp \
+  /Users/asaeed/code/cinder/boost/boost/variant/detail/apply_visitor_delayed.hpp \
+  /Users/asaeed/code/cinder/boost/boost/variant/detail/apply_visitor_binary.hpp \
+  /Users/asaeed/code/cinder/boost/boost/variant/variant.hpp \
+  /Users/asaeed/code/cinder/boost/boost/variant/detail/config.hpp \
+  /Users/asaeed/code/cinder/boost/boost/variant/variant_fwd.hpp \
+  /Users/asaeed/code/cinder/boost/boost/blank_fwd.hpp \
+  /Users/asaeed/code/cinder/boost/boost/preprocessor/enum_shifted_params.hpp \
+  /Users/asaeed/code/cinder/boost/boost/variant/detail/substitute_fwd.hpp \
+  /Users/asaeed/code/cinder/boost/boost/variant/detail/backup_holder.hpp \
+  /Users/asaeed/code/cinder/boost/boost/variant/detail/enable_recursive_fwd.hpp \
+  /Users/asaeed/code/cinder/boost/boost/variant/detail/forced_return.hpp \
+  /Users/asaeed/code/cinder/boost/boost/variant/detail/initializer.hpp \
+  /Users/asaeed/code/cinder/boost/boost/variant/recursive_wrapper_fwd.hpp \
+  /Users/asaeed/code/cinder/boost/boost/variant/detail/make_variant_list.hpp \
+  /Users/asaeed/code/cinder/boost/boost/variant/variant_fwd.hpp \
+  /Users/asaeed/code/cinder/boost/boost/variant/detail/over_sequence.hpp \
+  /Users/asaeed/code/cinder/boost/boost/variant/detail/visitation_impl.hpp \
+  /Users/asaeed/code/cinder/boost/boost/variant/detail/backup_holder.hpp \
+  /Users/asaeed/code/cinder/boost/boost/variant/detail/cast_storage.hpp \
+  /Users/asaeed/code/cinder/boost/boost/variant/detail/forced_return.hpp \
+  /Users/asaeed/code/cinder/boost/boost/type_traits/has_nothrow_copy.hpp \
+  /Users/asaeed/code/cinder/boost/boost/variant/detail/has_nothrow_move.hpp \
+  /Users/asaeed/code/cinder/boost/boost/variant/detail/has_trivial_move.hpp \
+  /Users/asaeed/code/cinder/boost/boost/type_traits/has_trivial_assign.hpp \
+  /Users/asaeed/code/cinder/boost/boost/variant/detail/bool_trait_def.hpp \
+  /Users/asaeed/code/cinder/boost/boost/variant/detail/bool_trait_undef.hpp \
+  /Users/asaeed/code/cinder/boost/boost/type_traits/has_nothrow_assign.hpp \
+  /Users/asaeed/code/cinder/boost/boost/type_traits/has_trivial_assign.hpp \
+  /Users/asaeed/code/cinder/boost/boost/variant/detail/generic_result_type.hpp \
+  /Users/asaeed/code/cinder/boost/boost/variant/detail/has_nothrow_move.hpp \
+  /Users/asaeed/code/cinder/boost/boost/variant/detail/move.hpp \
+  /Users/asaeed/code/cinder/boost/boost/math/common_factor_ct.hpp \
+  /Users/asaeed/code/cinder/boost/boost/type_traits/has_nothrow_copy.hpp \
+  /Users/asaeed/code/cinder/boost/boost/variant/recursive_wrapper_fwd.hpp \
+  /Users/asaeed/code/cinder/boost/boost/variant/static_visitor.hpp \
+  /Users/asaeed/code/cinder/boost/boost/mpl/empty.hpp \
+  /Users/asaeed/code/cinder/boost/boost/mpl/aux_/empty_impl.hpp \
+  /Users/asaeed/code/cinder/boost/boost/mpl/front.hpp \
+  /Users/asaeed/code/cinder/boost/boost/mpl/aux_/front_impl.hpp \
+  /Users/asaeed/code/cinder/boost/boost/mpl/max_element.hpp \
+  /Users/asaeed/code/cinder/boost/boost/mpl/sizeof.hpp \
+  /Users/asaeed/code/cinder/boost/boost/mpl/transform.hpp \
+  /Users/asaeed/code/cinder/boost/boost/mpl/pair_view.hpp \
+  /Users/asaeed/code/cinder/boost/boost/mpl/iterator_category.hpp \
+  /Users/asaeed/code/cinder/boost/boost/mpl/min_max.hpp \
+  /Users/asaeed/code/cinder/boost/boost/variant/detail/variant_io.hpp \
+  /Users/asaeed/code/cinder/boost/boost/detail/templated_streams.hpp \
+  /Users/asaeed/code/cinder/boost/boost/variant/static_visitor.hpp \
+  /Users/asaeed/code/cinder/boost/boost/signals2/trackable.hpp \
+  /Users/asaeed/code/cinder/boost/boost/signals2/preprocessed_slot.hpp \
+  /Users/asaeed/code/cinder/boost/boost/preprocessor/repetition.hpp \
+  /Users/asaeed/code/cinder/boost/boost/preprocessor/repetition/deduce_r.hpp \
+  /Users/asaeed/code/cinder/boost/boost/preprocessor/repetition/deduce_z.hpp \
+  /Users/asaeed/code/cinder/boost/boost/preprocessor/repetition/enum_params_with_defaults.hpp \
+  /Users/asaeed/code/cinder/boost/boost/preprocessor/repetition/enum_shifted_binary_params.hpp \
+  /Users/asaeed/code/cinder/boost/boost/preprocessor/repetition/enum_trailing.hpp \
+  /Users/asaeed/code/cinder/boost/boost/preprocessor/repetition/enum_trailing_binary_params.hpp \
+  /Users/asaeed/code/cinder/boost/boost/signals2/detail/preprocessed_arg_type.hpp \
+  /Users/asaeed/code/cinder/boost/boost/signals2/detail/preprocessed_arg_type_template.hpp \
+  /Users/asaeed/code/cinder/boost/boost/type_traits/function_traits.hpp \
+  /Users/asaeed/code/cinder/boost/boost/signals2/detail/slot_template.hpp \
+  /Users/asaeed/code/cinder/boost/boost/signals2/detail/replace_slot_function.hpp \
+  /Users/asaeed/code/cinder/boost/boost/signals2/detail/result_type_wrapper.hpp \
+  /Users/asaeed/code/cinder/boost/boost/signals2/detail/slot_groups.hpp \
+  /Users/asaeed/code/cinder/boost/boost/signals2/detail/slot_call_iterator.hpp \
+  /Users/asaeed/code/cinder/boost/boost/signals2/detail/auto_buffer.hpp \
+  /Users/asaeed/code/cinder/boost/boost/multi_index/detail/scope_guard.hpp \
+  /Users/asaeed/code/cinder/boost/boost/type_traits/has_nothrow_copy.hpp \
+  /Users/asaeed/code/cinder/boost/boost/type_traits/has_nothrow_assign.hpp \
+  /Users/asaeed/code/cinder/boost/boost/signals2/optional_last_value.hpp \
+  /Users/asaeed/code/cinder/boost/boost/signals2/mutex.hpp \
+  /Users/asaeed/code/cinder/boost/boost/signals2/detail/lwm_pthreads.hpp \
+  /Users/asaeed/code/cinder/boost/boost/signals2/preprocessed_signal.hpp \
+  /Users/asaeed/code/cinder/boost/boost/preprocessor/arithmetic.hpp \
+  /Users/asaeed/code/cinder/boost/boost/preprocessor/arithmetic/div.hpp \
+  /Users/asaeed/code/cinder/boost/boost/preprocessor/arithmetic/mul.hpp \
+  /Users/asaeed/code/cinder/boost/boost/preprocessor/iteration.hpp \
+  /Users/asaeed/code/cinder/boost/boost/preprocessor/iteration/self.hpp \
+  /Users/asaeed/code/cinder/boost/boost/signals2/detail/signal_template.hpp \
+  /Users/asaeed/code/cinder/boost/boost/signals2/signal_type.hpp \
+  /Users/asaeed/code/cinder/boost/boost/parameter.hpp \
+  /Users/asaeed/code/cinder/boost/boost/parameter/parameters.hpp \
+  /Users/asaeed/code/cinder/boost/boost/detail/is_xxx.hpp \
+  /Users/asaeed/code/cinder/boost/boost/parameter/aux_/arg_list.hpp \
+  /Users/asaeed/code/cinder/boost/boost/parameter/aux_/void.hpp \
+  /Users/asaeed/code/cinder/boost/boost/parameter/aux_/result_of0.hpp \
+  /Users/asaeed/code/cinder/boost/boost/parameter/aux_/default.hpp \
+  /Users/asaeed/code/cinder/boost/boost/parameter/aux_/parameter_requirements.hpp \
+  /Users/asaeed/code/cinder/boost/boost/parameter/aux_/yesno.hpp \
+  /Users/asaeed/code/cinder/boost/boost/parameter/aux_/is_maybe.hpp \
+  /Users/asaeed/code/cinder/boost/boost/parameter/config.hpp \
+  /Users/asaeed/code/cinder/boost/boost/parameter/aux_/unwrap_cv_reference.hpp \
+  /Users/asaeed/code/cinder/boost/boost/parameter/aux_/tagged_argument.hpp \
+  /Users/asaeed/code/cinder/boost/boost/parameter/aux_/tag.hpp \
+  /Users/asaeed/code/cinder/boost/boost/parameter/aux_/template_keyword.hpp \
+  /Users/asaeed/code/cinder/boost/boost/parameter/aux_/set.hpp \
+  /Users/asaeed/code/cinder/boost/boost/mpl/insert.hpp \
+  /Users/asaeed/code/cinder/boost/boost/mpl/insert_fwd.hpp \
+  /Users/asaeed/code/cinder/boost/boost/mpl/aux_/insert_impl.hpp \
+  /Users/asaeed/code/cinder/boost/boost/mpl/set/set0.hpp \
+  /Users/asaeed/code/cinder/boost/boost/mpl/set/aux_/at_impl.hpp \
+  /Users/asaeed/code/cinder/boost/boost/mpl/set/aux_/has_key_impl.hpp \
+  /Users/asaeed/code/cinder/boost/boost/mpl/set/aux_/tag.hpp \
+  /Users/asaeed/code/cinder/boost/boost/mpl/has_key_fwd.hpp \
+  /Users/asaeed/code/cinder/boost/boost/mpl/aux_/overload_names.hpp \
+  /Users/asaeed/code/cinder/boost/boost/mpl/aux_/ptr_to_ref.hpp \
+  /Users/asaeed/code/cinder/boost/boost/mpl/aux_/config/operators.hpp \
+  /Users/asaeed/code/cinder/boost/boost/mpl/set/aux_/clear_impl.hpp \
+  /Users/asaeed/code/cinder/boost/boost/mpl/set/aux_/set0.hpp \
+  /Users/asaeed/code/cinder/boost/boost/mpl/set/aux_/size_impl.hpp \
+  /Users/asaeed/code/cinder/boost/boost/mpl/set/aux_/empty_impl.hpp \
+  /Users/asaeed/code/cinder/boost/boost/mpl/set/aux_/insert_impl.hpp \
+  /Users/asaeed/code/cinder/boost/boost/mpl/set/aux_/item.hpp \
+  /Users/asaeed/code/cinder/boost/boost/mpl/base.hpp \
+  /Users/asaeed/code/cinder/boost/boost/mpl/set/aux_/erase_impl.hpp \
+  /Users/asaeed/code/cinder/boost/boost/mpl/erase_fwd.hpp \
+  /Users/asaeed/code/cinder/boost/boost/mpl/set/aux_/erase_key_impl.hpp \
+  /Users/asaeed/code/cinder/boost/boost/mpl/erase_key_fwd.hpp \
+  /Users/asaeed/code/cinder/boost/boost/mpl/set/aux_/key_type_impl.hpp \
+  /Users/asaeed/code/cinder/boost/boost/mpl/key_type_fwd.hpp \
+  /Users/asaeed/code/cinder/boost/boost/mpl/set/aux_/value_type_impl.hpp \
+  /Users/asaeed/code/cinder/boost/boost/mpl/value_type_fwd.hpp \
+  /Users/asaeed/code/cinder/boost/boost/mpl/set/aux_/begin_end_impl.hpp \
+  /Users/asaeed/code/cinder/boost/boost/mpl/set/aux_/iterator.hpp \
+  /Users/asaeed/code/cinder/boost/boost/mpl/has_key.hpp \
+  /Users/asaeed/code/cinder/boost/boost/mpl/aux_/has_key_impl.hpp \
+  /Users/asaeed/code/cinder/boost/boost/parameter/aux_/overloads.hpp \
+  /Users/asaeed/code/cinder/boost/boost/parameter/keyword.hpp \
+  /Users/asaeed/code/cinder/boost/boost/parameter/binding.hpp \
+  /Users/asaeed/code/cinder/boost/boost/parameter/value_type.hpp \
+  /Users/asaeed/code/cinder/boost/boost/parameter/macros.hpp \
+  /Users/asaeed/code/cinder/boost/boost/parameter/match.hpp \
+  /Users/asaeed/code/cinder/boost/boost/parameter/name.hpp \
+  /Users/asaeed/code/cinder/boost/boost/parameter/preprocessor.hpp \
+  /Users/asaeed/code/cinder/boost/boost/parameter/aux_/parenthesized_type.hpp \
+  /Users/asaeed/code/cinder/boost/boost/parameter/aux_/cast.hpp \
+  /Users/asaeed/code/cinder/boost/boost/parameter/aux_/preprocessor/flatten.hpp \
+  /Users/asaeed/code/cinder/boost/boost/preprocessor/selection/max.hpp \
+  /Users/asaeed/code/cinder/boost/boost/parameter/aux_/preprocessor/for_each.hpp \
+  /Users/asaeed/code/cinder/boost/boost/preprocessor/detail/split.hpp \
+  /Users/asaeed/code/cinder/boost/boost/preprocessor/facilities/is_empty.hpp \
+  /Users/asaeed/code/cinder/boost/boost/preprocessor/for.hpp \
+  /Users/asaeed/code/cinder/boost/boost/preprocessor/comparison/equal.hpp \
+  /Users/asaeed/code/cinder/boost/boost/preprocessor/detail/is_nullary.hpp \
+  /Users/asaeed/code/cinder/boost/boost/signals2/shared_connection_block.hpp
 
 /Users/asaeed/code/cinder/include/cinder/app/AppBasic.h:
 
@@ -3273,3 +3477,413 @@ src/LiveOscSignalsApp.d src/LiveOscSignalsApp.o:  \
 /Users/asaeed/work/LiveOscSignals/include/OscMessage.h:
 
 /Users/asaeed/work/LiveOscSignals/include/OscArg.h:
+
+../src/LiveOsc.h:
+
+/Users/asaeed/code/cinder/boost/boost/signals2.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/signals2/deconstruct.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/signals2/deconstruct_ptr.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/signals2/postconstructible.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/signals2/predestructible.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/signals2/dummy_mutex.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/signals2/last_value.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/signals2/expired_slot.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/signals2/signal.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/function.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/function/detail/prologue.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/config/no_tr1/functional.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/function/function_base.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/type_traits/composite_traits.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/function_equal.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/function/function_fwd.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/mem_fn.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/bind/mem_fn.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/get_pointer.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/bind/mem_fn_template.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/bind/mem_fn_cc.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/preprocessor/enum.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/preprocessor/enum_params.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/function/detail/function_iterate.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/function/detail/maybe_include.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/function/function_template.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/detail/no_exceptions_support.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/signals2/connection.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/signals2/detail/null_output_iterator.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/function_output_iterator.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/signals2/detail/unique_lock.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/signals2/slot.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/bind.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/bind/bind.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/is_placeholder.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/bind/arg.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/visit_each.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/bind/storage.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/bind/bind_template.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/bind/bind_cc.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/bind/bind_mf_cc.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/bind/bind_mf2_cc.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/bind/placeholders.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/signals2/detail/signals_common.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/signals2/signal_base.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/signals2/detail/signals_common_macros.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/signals2/detail/tracked_objects_visitor.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/signals2/slot_base.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/any.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/weak_ptr.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/smart_ptr/weak_ptr.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/signals2/detail/foreign_ptr.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/scoped_ptr.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/smart_ptr/scoped_ptr.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/variant/apply_visitor.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/variant/detail/apply_visitor_unary.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/variant/detail/generic_result_type.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/variant/detail/apply_visitor_binary.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/variant/detail/apply_visitor_unary.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/variant/detail/apply_visitor_delayed.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/variant/detail/apply_visitor_binary.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/variant/variant.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/variant/detail/config.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/variant/variant_fwd.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/blank_fwd.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/preprocessor/enum_shifted_params.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/variant/detail/substitute_fwd.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/variant/detail/backup_holder.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/variant/detail/enable_recursive_fwd.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/variant/detail/forced_return.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/variant/detail/initializer.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/variant/recursive_wrapper_fwd.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/variant/detail/make_variant_list.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/variant/variant_fwd.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/variant/detail/over_sequence.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/variant/detail/visitation_impl.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/variant/detail/backup_holder.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/variant/detail/cast_storage.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/variant/detail/forced_return.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/type_traits/has_nothrow_copy.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/variant/detail/has_nothrow_move.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/variant/detail/has_trivial_move.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/type_traits/has_trivial_assign.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/variant/detail/bool_trait_def.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/variant/detail/bool_trait_undef.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/type_traits/has_nothrow_assign.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/type_traits/has_trivial_assign.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/variant/detail/generic_result_type.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/variant/detail/has_nothrow_move.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/variant/detail/move.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/math/common_factor_ct.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/type_traits/has_nothrow_copy.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/variant/recursive_wrapper_fwd.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/variant/static_visitor.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/mpl/empty.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/mpl/aux_/empty_impl.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/mpl/front.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/mpl/aux_/front_impl.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/mpl/max_element.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/mpl/sizeof.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/mpl/transform.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/mpl/pair_view.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/mpl/iterator_category.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/mpl/min_max.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/variant/detail/variant_io.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/detail/templated_streams.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/variant/static_visitor.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/signals2/trackable.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/signals2/preprocessed_slot.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/preprocessor/repetition.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/preprocessor/repetition/deduce_r.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/preprocessor/repetition/deduce_z.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/preprocessor/repetition/enum_params_with_defaults.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/preprocessor/repetition/enum_shifted_binary_params.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/preprocessor/repetition/enum_trailing.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/preprocessor/repetition/enum_trailing_binary_params.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/signals2/detail/preprocessed_arg_type.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/signals2/detail/preprocessed_arg_type_template.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/type_traits/function_traits.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/signals2/detail/slot_template.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/signals2/detail/replace_slot_function.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/signals2/detail/result_type_wrapper.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/signals2/detail/slot_groups.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/signals2/detail/slot_call_iterator.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/signals2/detail/auto_buffer.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/multi_index/detail/scope_guard.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/type_traits/has_nothrow_copy.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/type_traits/has_nothrow_assign.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/signals2/optional_last_value.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/signals2/mutex.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/signals2/detail/lwm_pthreads.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/signals2/preprocessed_signal.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/preprocessor/arithmetic.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/preprocessor/arithmetic/div.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/preprocessor/arithmetic/mul.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/preprocessor/iteration.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/preprocessor/iteration/self.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/signals2/detail/signal_template.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/signals2/signal_type.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/parameter.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/parameter/parameters.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/detail/is_xxx.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/parameter/aux_/arg_list.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/parameter/aux_/void.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/parameter/aux_/result_of0.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/parameter/aux_/default.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/parameter/aux_/parameter_requirements.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/parameter/aux_/yesno.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/parameter/aux_/is_maybe.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/parameter/config.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/parameter/aux_/unwrap_cv_reference.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/parameter/aux_/tagged_argument.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/parameter/aux_/tag.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/parameter/aux_/template_keyword.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/parameter/aux_/set.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/mpl/insert.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/mpl/insert_fwd.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/mpl/aux_/insert_impl.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/mpl/set/set0.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/mpl/set/aux_/at_impl.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/mpl/set/aux_/has_key_impl.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/mpl/set/aux_/tag.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/mpl/has_key_fwd.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/mpl/aux_/overload_names.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/mpl/aux_/ptr_to_ref.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/mpl/aux_/config/operators.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/mpl/set/aux_/clear_impl.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/mpl/set/aux_/set0.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/mpl/set/aux_/size_impl.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/mpl/set/aux_/empty_impl.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/mpl/set/aux_/insert_impl.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/mpl/set/aux_/item.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/mpl/base.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/mpl/set/aux_/erase_impl.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/mpl/erase_fwd.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/mpl/set/aux_/erase_key_impl.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/mpl/erase_key_fwd.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/mpl/set/aux_/key_type_impl.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/mpl/key_type_fwd.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/mpl/set/aux_/value_type_impl.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/mpl/value_type_fwd.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/mpl/set/aux_/begin_end_impl.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/mpl/set/aux_/iterator.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/mpl/has_key.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/mpl/aux_/has_key_impl.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/parameter/aux_/overloads.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/parameter/keyword.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/parameter/binding.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/parameter/value_type.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/parameter/macros.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/parameter/match.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/parameter/name.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/parameter/preprocessor.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/parameter/aux_/parenthesized_type.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/parameter/aux_/cast.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/parameter/aux_/preprocessor/flatten.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/preprocessor/selection/max.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/parameter/aux_/preprocessor/for_each.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/preprocessor/detail/split.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/preprocessor/facilities/is_empty.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/preprocessor/for.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/preprocessor/comparison/equal.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/preprocessor/detail/is_nullary.hpp:
+
+/Users/asaeed/code/cinder/boost/boost/signals2/shared_connection_block.hpp:
