@@ -89,15 +89,14 @@ void LiveOscSignalsApp::printOSC() {
 }
 
 void LiveOscSignalsApp::printOSCMessage( ci::osc::Message message ) {
-	console() << "New message received" << std::endl;
-	console() << "Address: " << message.getAddress() << std::endl;
-	console() << "Num Arg: " << message.getNumArgs() << std::endl;
+	console() << "--> " << message.getAddress() << "    ";
+	console() << "#args:" << message.getNumArgs() << "  ";
 	for (int i = 0; i < message.getNumArgs(); i++) {
-		console() << "-- Argument " << i << std::endl;
-		console() << "---- type: " << message.getArgTypeName(i) << std::endl;
+		console() << "[" << i << "] ";
+		console() << message.getArgTypeName(i) << "";
 		if (message.getArgType(i) == ci::osc::TYPE_INT32){
 			try {
-				console() << "------ value: "<< message.getArgAsInt32(i) << std::endl;
+				console() << ":  "<< message.getArgAsInt32(i) << std::endl;
 			}
 			catch (...) {
 				console() << "Exception reading argument as int32" << std::endl;
@@ -105,14 +104,14 @@ void LiveOscSignalsApp::printOSCMessage( ci::osc::Message message ) {
 
 		}else if (message.getArgType(i) == ci::osc::TYPE_FLOAT){
 			try {
-				console() << "------ value: " << message.getArgAsFloat(i) << std::endl;
+				console() << ":  " << message.getArgAsFloat(i) << std::endl;
 			}
 			catch (...) {
 				console() << "Exception reading argument as float" << std::endl;
 			}
 		}else if (message.getArgType(i) == ci::osc::TYPE_STRING){
 			try {
-				console() << "------ value: " << message.getArgAsString(i).c_str() << std::endl;
+				console() << ":  " << message.getArgAsString(i).c_str() << std::endl;
 			}
 			catch (...) {
 				console() << "Exception reading argument as string" << std::endl;
