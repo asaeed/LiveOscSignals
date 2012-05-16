@@ -33,6 +33,7 @@ public:
 
 	LiveOsc liveOsc;
 	ci::gl::Texture texture;
+	ci::ColorA flashingColor;
 };
 
 void LiveOscSignalsApp::prepareSettings( ci::app::AppBasic::Settings *settings ) {
@@ -42,6 +43,7 @@ void LiveOscSignalsApp::prepareSettings( ci::app::AppBasic::Settings *settings )
 void LiveOscSignalsApp::setup() {
 	std::cout << "Setting application path: " << getAppPath() << std::endl;
 	chdir( getAppPath().c_str( ) );
+	ci::gl::enableAlphaBlending();
 
 	liveOsc.setup();
 
@@ -50,6 +52,7 @@ void LiveOscSignalsApp::setup() {
 	// note: adding "using namespace std" makes this not work because _1 becomes an ambiguous ref
 	liveOsc.getBeatSignal()->connect(boost::bind(&LiveOscSignalsApp::onBeatEvent, this, _1));
 
+	flashingColor = ci::ColorA(1.0f, 1.0f, 1.0f, 1.0f);
 	// Test loading a texture
 	texture = ci::gl::Texture( ci::loadImage( ci::app::App::get()->loadResource( RES_WHEEL ) ) );
 }
@@ -59,21 +62,17 @@ void LiveOscSignalsApp::mouseDown( ci::app::MouseEvent event ) {
 
 void LiveOscSignalsApp::update() {
 	liveOsc.update();
+	flashingColor.a += -0.04;
 }
 void LiveOscSignalsApp::draw() {
-	// clear out the window with black
+
+
+	ci::gl::clear(ci::Color(0,0,0));
+
+	ci::gl::color(flashingColor);
+	ci::gl::drawSolidRect(ci::Rectf(0.0f, 0.0f, getWindowWidth(), getWindowHeight()));
+
 	/*
-	ci::Color aColor = ci::Color( 0, 0, 0 );
-	aColor.r = fabs( cosf(getElapsedFrames() * 0.008) );
-	aColor.g = fabs( sinf(getElapsedFrames() * 0.01) );
-	aColor.b = (float) getMousePos().x / getWindowWidth();
-
-	ci::gl::clear( ci::Color( 0, 0, 0 ) );
-
-	ci::gl::color( ci::Color(aColor * 0.5) );
-	ci::gl::drawLine( ci::Vec2f(getMousePos()), ci::Vec2f( getWindowCenter() ) );
-
-
 	if ( texture ) {
 		ci::gl::color( ci::ColorA(1.0f, 1.0f, 1.0f, 1.0f) );
 		ci::gl::draw( texture, getWindowCenter() );
@@ -86,7 +85,8 @@ void LiveOscSignalsApp::draw() {
 }
 
 void LiveOscSignalsApp::onBeatEvent(ci::osc::Message* message){
-	liveOsc.printOSCMessage(*message);
+	//liveOsc.printOSCMessage(*message);
+	flashingColor.a = 1;
 }
 
 

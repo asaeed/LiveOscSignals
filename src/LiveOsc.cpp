@@ -23,27 +23,26 @@ void LiveOsc::update() {
 	while (_listener.hasWaitingMessages()) {
 		ci::osc::Message message;
 		_listener.getNextMessage(&message);
-		beatEvent(&message);
+		printOSCMessage(message);
+
+		if (message.getAddress() == "/live/beat")
+			beatEvent(&message);
 	}
 }
 
-/**
- * Dispatch the event to all listeners
- */
 void LiveOsc::beatEvent(ci::osc::Message* m) {
-	_beatSignal( m );
+	_beatSignal(m);
 }
 
-
 void LiveOsc::printOSCMessage( ci::osc::Message message ) {
-	std::cout << "--> " << message.getAddress() << "    ";
+	std::cout << "--> " << message.getAddress() << "  ";
 	std::cout << "#args:" << message.getNumArgs() << "  ";
 	for (int i = 0; i < message.getNumArgs(); i++) {
-		std::cout << "[" << i << "] ";
+		std::cout << "[" << i << "]";
 		std::cout << message.getArgTypeName(i);
 		if (message.getArgType(i) == ci::osc::TYPE_INT32){
 			try {
-				std::cout << ":  "<< message.getArgAsInt32(i) << std::endl;
+				std::cout << ": "<< message.getArgAsInt32(i);
 			}
 			catch (...) {
 				std::cout << "Exception reading argument as int32" << std::endl;
@@ -51,21 +50,22 @@ void LiveOsc::printOSCMessage( ci::osc::Message message ) {
 
 		}else if (message.getArgType(i) == ci::osc::TYPE_FLOAT){
 			try {
-				std::cout << ":  " << message.getArgAsFloat(i) << std::endl;
+				std::cout << ": " << message.getArgAsFloat(i);
 			}
 			catch (...) {
 				std::cout << "Exception reading argument as float" << std::endl;
 			}
 		}else if (message.getArgType(i) == ci::osc::TYPE_STRING){
 			try {
-				std::cout << ":  " << message.getArgAsString(i).c_str() << std::endl;
+				std::cout << ": " << message.getArgAsString(i).c_str();
 			}
 			catch (...) {
 				std::cout << "Exception reading argument as string" << std::endl;
 			}
-
 		}
+		std::cout << "  ";
 	}
+	std::cout << std::endl;
 }
 
 
