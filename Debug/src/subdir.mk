@@ -4,15 +4,12 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../src/LiveOsc.cpp \
 ../src/LiveOscSignalsApp.cpp 
 
 OBJS += \
-./src/LiveOsc.o \
 ./src/LiveOscSignalsApp.o 
 
 CPP_DEPS += \
-./src/LiveOsc.d \
 ./src/LiveOscSignalsApp.d 
 
 

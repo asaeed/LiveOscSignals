@@ -17,8 +17,11 @@
 #include "gl.h"
 
 #include "OscListener.h"
-#include "LiveOsc.h"
+#include "liveosc/LiveOsc.h"
+#include "visuals/VisualStateMachine.h"
 #include "boost/bind.hpp"
+
+using namespace liveosc;
 
 class LiveOscSignalsApp : public ci::app::AppBasic {
 public:

@@ -1090,7 +1090,8 @@ src/LiveOscSignalsApp.d src/LiveOscSignalsApp.o:  \
   /System/Library/Frameworks/OpenGL.framework/Headers/gl.h \
   /Users/asaeed/work/LiveOscSignals/include/OscListener.h \
   /Users/asaeed/work/LiveOscSignals/include/OscMessage.h \
-  /Users/asaeed/work/LiveOscSignals/include/OscArg.h ../src/LiveOsc.h \
+  /Users/asaeed/work/LiveOscSignals/include/OscArg.h \
+  ../src/liveosc/LiveOsc.h \
   /Users/asaeed/code/cinder/boost/boost/signals2.hpp \
   /Users/asaeed/code/cinder/boost/boost/signals2/deconstruct.hpp \
   /Users/asaeed/code/cinder/boost/boost/signals2/deconstruct_ptr.hpp \
@@ -1294,7 +1295,8 @@ src/LiveOscSignalsApp.d src/LiveOscSignalsApp.o:  \
   /Users/asaeed/code/cinder/boost/boost/preprocessor/for.hpp \
   /Users/asaeed/code/cinder/boost/boost/preprocessor/comparison/equal.hpp \
   /Users/asaeed/code/cinder/boost/boost/preprocessor/detail/is_nullary.hpp \
-  /Users/asaeed/code/cinder/boost/boost/signals2/shared_connection_block.hpp
+  /Users/asaeed/code/cinder/boost/boost/signals2/shared_connection_block.hpp \
+  ../src/visuals/VisualStateMachine.h
 
 /Users/asaeed/code/cinder/include/cinder/app/AppBasic.h:
 
@@ -3478,7 +3480,7 @@ src/LiveOscSignalsApp.d src/LiveOscSignalsApp.o:  \
 
 /Users/asaeed/work/LiveOscSignals/include/OscArg.h:
 
-../src/LiveOsc.h:
+../src/liveosc/LiveOsc.h:
 
 /Users/asaeed/code/cinder/boost/boost/signals2.hpp:
 
@@ -3887,3 +3889,5 @@ src/LiveOscSignalsApp.d src/LiveOscSignalsApp.o:  \
 /Users/asaeed/code/cinder/boost/boost/preprocessor/detail/is_nullary.hpp:
 
 /Users/asaeed/code/cinder/boost/boost/signals2/shared_connection_block.hpp:
+
+../src/visuals/VisualStateMachine.h:
